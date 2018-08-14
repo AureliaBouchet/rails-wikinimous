@@ -1,0 +1,9 @@
+<div class="title-section">
+  <h1 class="title"> <%= @article.title %> </h1>
+  <%= link_to "", edit_article_path(@article), class: "fas fa-pencil-alt" %>
+  <%= link_to "", article_path(@article), method: :delete, data: { confirm: "Are you sure you want to delete article?" }, class: "fas fa-trash-alt" %>
+</div>
+
+<div class="article-content top-border">
+  <p><%= @article.content %></p>
+</div>
